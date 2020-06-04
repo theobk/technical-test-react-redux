@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getArticles, articles, articlesToShow, showMore } from './articlesSlice';
 import { Button } from '@material-ui/core';
+import Article from './Article';
 
 
 export function Articles() {
@@ -18,10 +19,12 @@ export function Articles() {
 
     });
 
+    const articles = currentArticles.map((art) => <Article article={art} />)
+
 
     return (
         <div className="articles">
-            <p>Check la console</p>
+            {articles}
             <Button variant="contained" color="primary" onClick={() => dispatch(showMore())}>
                 LOAD MORE
             </Button>
