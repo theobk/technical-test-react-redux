@@ -17,7 +17,7 @@ export function Articles() {
         }
     });
 
-    const articles = currentArticles.map((art) => <Article article={art} />)
+    const articles = currentArticles.map((art) => <Article article={art} key={art.id} />)
 
     return (
         <Container className="articles" maxWidth="lg">

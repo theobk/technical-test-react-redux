@@ -3,7 +3,9 @@ Technical test React-redux
 
 ## Installation
 
-First you will have to have nodeJS installed.
+Go to `./tech-test`
+
+First you will have to have NodeJS installed.
 
 Then you will need to install dependencies by running  `npm install`.
 
