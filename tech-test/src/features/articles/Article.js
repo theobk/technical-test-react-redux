@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Card, Button, CardContent, Typography } from '@material-ui/core';
-import './Articles.css';
 import { addToCart } from './articlesSlice';
 import { useDispatch } from 'react-redux';
 
