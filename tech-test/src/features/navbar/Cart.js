@@ -27,7 +27,7 @@ export default function Cart(props) {
     
 
     return (   <Dialog className="cart" onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-                    <DialogTitle id="simple-dialog-title">YOUR CART</DialogTitle>
+                    <DialogTitle id="simple-dialog-title">Your cart</DialogTitle>
                     
                     {cartArticles.length !== 0
                     ?
@@ -51,7 +51,7 @@ export default function Cart(props) {
                     CLEAR
                     </Button>
                     </> 
-                    :   <h3 className="empty-cart">Your cart is empty</h3>
+                    :   <h3 className="empty-cart">Your cart is currently empty</h3>
                     }
                     
                     

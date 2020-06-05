@@ -23,7 +23,7 @@ export default function NavBar() {
     return ( <AppBar position="static">
                 <Toolbar>
                 <Typography variant="h6">
-                    Your Marketplace
+                    My Marketplace
                 </Typography>
                 <IconButton className="shopping-cart" color="inherit" onClick={handleClickOpen}>
                     <Badge badgeContent={cartArticles.length} color="secondary">

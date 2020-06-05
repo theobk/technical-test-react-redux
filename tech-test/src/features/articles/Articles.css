@@ -27,6 +27,11 @@ header .shopping-cart {
     bottom: 20px;
 }
 
+.articles .article-card h3 {
+    text-align: left;
+    color: #616161;
+}
+
 .load-more {
     margin-top: 50px !important;
 }
