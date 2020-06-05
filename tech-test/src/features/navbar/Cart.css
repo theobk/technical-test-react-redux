@@ -1,0 +1,23 @@
+.cart-article-img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cart .cart-article  {
+    margin: 20px;
+    -webkit-box-shadow: 0px 2px 7px 1px rgba(130,130,130,1);
+    -moz-box-shadow: 0px 2px 7px 1px rgba(130,130,130,1);
+    box-shadow: 0px 2px 7px 1px rgba(130,130,130,1);
+    width: auto;
+}
+
+.cart .empty-cart {
+    text-align: center;
+    margin: 50px;
+}
+
+.cart .MuiDialogTitle-root {
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+}
