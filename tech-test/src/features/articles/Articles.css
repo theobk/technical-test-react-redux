@@ -1,0 +1,33 @@
+.articles .article-img {
+    max-width: -webkit-fill-available;
+}
+
+.articles {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.article-card {
+    height: 600px;
+}
+
+header .shopping-cart {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+}
+
+.articles .article-card {
+    position: relative;
+}
+
+.articles .cart-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.load-more {
+    margin-top: 50px !important;
+}
+

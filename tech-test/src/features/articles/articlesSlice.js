@@ -5,7 +5,8 @@ export const articleSlice = createSlice({
   name: 'articles',
   initialState: {
     value: [],
-    toShow: []
+    toShow: [],
+    cart: []
   },
   reducers: {
     fetchArticles: (state, action) => {
@@ -31,13 +32,28 @@ export const articleSlice = createSlice({
         else {
             state.toShow = state.value;
         }
-    }
+    },
+    addToCartAction: (state, action) => {
+        state.cart.push(action.payload);
+    },
+    removeFromCartAction: (state, action) => {
+        const newCart = state.cart.reduce((res, article) => { 
+            if(article.id !== action.payload.id){
+                res.push(article);
+            }
+            return res;
+        }, [])
+
+        state.cart = newCart;
+    },
   },
 });
 
 export const { fetchArticles } = articleSlice.actions;
 export const { toShowArticles } = articleSlice.actions;
 export const { showMoreArticles } = articleSlice.actions;
+export const { addToCartAction } = articleSlice.actions;
+export const { removeFromCartAction } = articleSlice.actions;
 
 
 // The function below is called a thunk and allows us to perform async logic. It
@@ -63,11 +79,20 @@ export const showMore = () => dispatch => {
     dispatch(showMoreArticles())
 };
 
+export const addToCart = (article) => dispatch => {
+    dispatch(addToCartAction(article))
+};
+
+export const removeFromCart = (article) => dispatch => {
+    dispatch(removeFromCartAction(article))
+};
+
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of
 // in the slice file. For example: `useSelector((state) => state.counter.value)`
 export const articles = state => state.articles.value;
 
 export const articlesToShow = state => state.articles.toShow;
+export const cart = state => state.articles.cart;
 
 export default articleSlice.reducer;
