@@ -8,8 +8,12 @@ export default function Article(props) {
 
     const dispatch = useDispatch();
 
+    var xs = 12;
+    var sm = 6;
+    var lg = 4;
+
     return (
-        <Grid xs={12} sm={6} lg={4} className={"article"+props.article.id} item>
+        <Grid xs={xs} sm={sm} lg={lg} className={"article"+props.article.id} item>
             <Card className="article-card">
                 <img className="article-img" src={props.article.url} alt="article"/>
                 <CardContent>

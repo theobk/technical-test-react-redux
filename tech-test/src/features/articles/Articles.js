@@ -20,14 +20,14 @@ export function Articles() {
     const articles = currentArticles.map((art) => <Article article={art} key={art.id} />)
 
     return (
-        <Container className="articles" maxWidth="lg">
+        <Container className="articles articles-margin" maxWidth="lg">
             <Grid
                 container
                 direction="row"
                 justify="center"
                 alignItems="center"
                 spacing={4}
-                >
+                >  
                 {articles}
             </Grid>
             <Button className="load-more" variant="contained" color="primary" onClick={() => dispatch(showMore())} size="large">

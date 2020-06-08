@@ -1,8 +1,4 @@
-.articles .article-img {
-    max-width: -webkit-fill-available;
-}
-
-.articles {
+.articles-margin {
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -11,10 +7,8 @@
     height: 600px;
 }
 
-header .shopping-cart {
-    position: absolute;
-    right: 30px;
-    top: 7px;
+.articles .article-img {
+    max-width: -webkit-fill-available;
 }
 
 .articles .article-card {
@@ -30,6 +24,18 @@ header .shopping-cart {
 .articles .article-card h3 {
     text-align: left;
     color: #616161;
+}
+
+header .shopping-cart {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+}
+
+header .search-icon {
+    position: absolute;
+    right: 90px;
+    top: 7px;
 }
 
 .load-more {

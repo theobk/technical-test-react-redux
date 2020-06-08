@@ -1,0 +1,16 @@
+.search .MuiDialogTitle-root {
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+}
+
+.search .search-txtField {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search .search-clear-div {
+    margin-top: 20px;
+    text-align: center;
+}
+

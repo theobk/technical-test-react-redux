@@ -45,7 +45,7 @@ export const articleSlice = createSlice({
         }, [])
 
         state.cart = newCart;
-    },
+    }
   },
 });
 
